@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <script src="https://kit.fontawesome.com/9b5107ae0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+
+<body>
+    <header>
+        <div class="containerheader">
+            <div class="logo"> 
+                <img src="Imagenes/Logo/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <a href="index.html"><b>Inicio</b></a>
+                        <a href="index1.html"><b>Sobre Nosotros</b></a>
+                        <a href="index2.html"><b>Ropa Mujer</b></a>
+                        <a href="index3.html"><b>Ropa Hombre</b></a>
+                        <a href="index4.html"><b>Contacto</b></a>
+                        <a href="index5.html" class="entrar"><b>Entrar</b></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="nosotros">
+        <div class="nosotrostexto">
+            <div class="nosotrospara">
+                <h3 class="titulo1">Sobre nosotros</h3>
+                <p class="paratexto1">
+                    Nuestra tienda, New Style, nació en 2024 con la misión de ofrecer 
+                    ropa de alta calidad a precios accesibles para cualquiera de 
+                    nuestros clientes. Lo que comenzó un proyecto de emprendimiento 
+                    en la universidad se ha convertido en una reconocida tienda 
+                    virtual que cuenta con un enfoque moderno que nos ha permitido 
+                    que nos ha ayudado a mantenernos en el mercado.
+                </p>
+                <h3 class="titulo">Misión</h3>
+                <p class="paratexto">
+                    En New Style, nuestra misión es vestir a nuestros 
+                    clientes con ropa de alta calidad que refleje su 
+                    estilo moderno. Creemos que la moda debe ser 
+                    accesible e inclusiva, por lo que trabajamos para 
+                    ofrecer productos de calidad desde su confección 
+                    hasta la llegada a sus manos. Nos comprometemos a 
+                    brindar un buen servicio para que cada uno de 
+                    nuestros clientes se sientan satisfechos, con la 
+                    confianza de que están adquiriendo algo más que una 
+                    prenda de vestir, invirtiendo en calidad, durabilidad
+                    y una visión donde la moda respeta a las personas y 
+                    sus gustos.
+                </p>
+                <h3 class="titulo1">Visión</h3>
+                <p class="paratexto1">
+                    Aspiramos a ser una de las tiendas de ropa líder en 
+                    Colombia gracias a nuestros diseños de innovación y 
+                    nuestro compromiso por la moda, no conocida solo por 
+                    la calidad de nuestros productos, sino también por 
+                    nuestro firme compromiso con la innovación y la
+                    responsabilidad. Deseamos crear una comunidad que 
+                    compartan nuestra misma pasión por la moda. 
+                    En New Style soñamos con un mundo donde la moda no 
+                    sea solo prendas de vestir, sino un estilo de vida 
+                    donde cada persona pueda expresar su personalidad 
+                    con cada una de nuestras prendas.
+                </p>
+                <h3 class="titulo">Equipo de Trabajo</h3>
+                <p class="paratexto">
+                    Nuestro equipo de trabajo está compuesto por apasionados 
+                    por el diseño, la moda y la buena atención al cliente. 
+                    Desde nuestros diseñadores hasta nuestro persona del 
+                    servicio al cliente, Todos en New Style trabajamos con 
+                    un solo objetivo: ofrecer un experiencia de compra 
+                    excepcional.
+                </p>
+                <h3 class="titulo1">Preguntas Frecuentes</h3>
+                <p class="paratexto1">
+                    <ul>
+                        <li>¿Cuánto tarde en llegar mi pedido?: Los envíos pueden 
+                            tardar en ciudades principales entre 2-3 días hábiles y 
+                            en otros pueblos entre 5-6 días hábiles.
+                        </li>
+                        <li>¿Se aceptan devoluciones?: Sí, aceptamos devoluciones no
+                            mayor a 30 días después de realizada la compra, siempre y 
+                            cuando la prenda esté en buen estado (Estado Original).
+                        </li>
+                        <li>¿Qué métodos de pago aceptan?: Aceptamos todos los métodos de pago, 
+                            tarjeta de crédito, débito pagos por PSE y transferencias bancarias.
+                        </li>
+                     </ul>
+                </p>
+            </div>
+
+        </div>
+      </div>
+       
+    </div>
+
+    <div class="iconoflotante">
+        <a href="http://Wa.me/573156733729" target="_blank">
+         <img class="botonicono" src="Icono/whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="logofooter">
+            <img src="Imagenes/Logo/logo.png" alt="">
+        </div>
+
+        <div class="redesfooter">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <h4>© 2024 New Style - Todos Los Derechos Reservados</h4>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');// Llama al botón del menú hamburguesa
+        const navMenu = document.querySelector('nav ul');// Selecciona lo que pertenece al menú de navegación
+    
+        menuToggle.addEventListener('click', () => { // Espera a que se haga clic en el botón del menú
+            navMenu.classList.toggle('show');// Show se utiliza como clase para mostrar o ocultar el menú
+        });
+        let lastScrollTop = 0; // Almacena la última posición de desplazamiento, determina si se esta desplazando o no la pantalla
+
+        window.addEventListener('scroll', () => { // Cada que el usuario se desplaza en la venta, se ejecutará la función
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;// 1. VARIABLE, 2. SI SE DESPLAZO HACIA ABAJO POSITIVO DE LO CONTRARIO 0, 3. EN CASO DE QUE 2. NO ESTE DISPONIBLE
+
+        
+        if (currentScroll > lastScrollTop) { //Si el usuario se está desplazando hacia abajo
+            navMenu.classList.remove('show'); // se oculta el menú
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar que el valor sea negativo si el usuario se desplaza hacia arriba o más allá de la parte superior
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f0e9e3;
+}
+/*-------Header-------*/
+header{
+    background-color: #c1aa94;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+.containerheader{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 150px;  
+}
+.menu{
+    height: 80px;
+}
+.menu nav{
+    margin: 10px 0;
+    text-align: center;
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+nav a{
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+.entrar {
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background: rgb(255, 111, 59);
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        right: 0;
+        bottom: 0; 
+        background-color: rgba(193, 170, 148, 0.95);
+        z-index: 1000; 
+        justify-content: center;
+        align-items: center;
+        height: 50vh; 
+        overflow: auto; 
+        transition: transform 0.3s ease; 
+        transform: translateY(-100%);
+        
+    }
+
+    .menu nav ul.show {
+        display: flex; 
+        text-align: center;
+        margin: 10px 0;
+        transform: translateY(0); 
+    }
+
+    .menu-toggle {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+    }
+}
+/*-----Ocultar el botón en pantallas grandes-----*/
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; 
+    }
+}
+/*-------Info-------*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0e9e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nosotros {
+    text-align: left;
+    padding: 20px;
+}
+h3.titulo1, h3.titulo {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+h3.titulo {
+    margin-top: 40px;
+}
+p.paratexto1, p.paratexto {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+ul {
+    padding-left: 20px;
+}
+/*-------Footer-------*/
+footer{
+    background-color: #c1aa94;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: auto;
+    bottom: 0;
+    width: 100%;
+}
+.redesfooter, i{
+    font-size: 30px;
+    color: black;
+}
+.logofooter img{
+    width: 100px;
+}
+/*-------Icono Whatsapp-------*/
+.iconoflotante{
+    background-color: #59c77c;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    border-radius: 50px;
+    bottom: 20px;
+    right: 25px;
+    padding: 10px;
+}
+.iconoflotante:hover{
+    color: #59c77c;
+    background: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.botonicono{
+    width: 40px;
+    transition: ease 1s;
+}

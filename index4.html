@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/9b5107ae0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos4.css">
+</head>
+
+<body>
+    <header>
+        <div class="containerheader">
+            <div class="logo"> 
+                <img src="Imagenes/Logo/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <a href="index.html"><b>Inicio</b></a>
+                        <a href="index1.html"><b>Sobre Nosotros</b></a>
+                        <a href="index2.html"><b>Ropa Mujer</b></a>
+                        <a href="index3.html"><b>Ropa Hombre</b></a>
+                        <a href="index4.html"><b>Contacto</b></a>
+                        <a href="index5.html" class="entrar"><b>Entrar</b></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="formulario">
+        <h2>Deja Tus Datos y nos contactaremos contigo</h2>
+        <label for="nombre">Nombre:</label>
+        <input class="control" type="text" id="nombre" name="nombre" required>
+    
+        <label for="email">Email:</label>
+        <input class="control" type="email" id="email" name="email" required>
+    
+        <label for="asunto">Asunto:</label>
+        <input class="control" type="text" id="asunto" name="asunto">
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="control" id="mensaje" name="mensaje" rows="5" required></textarea>
+    
+        <button class="boton1">Enviar</button>
+    </div>
+
+    <div class="iconoflotante">
+        <a href="http://Wa.me/573156733729" target="_blank">
+         <img class="botonicono" src="Icono/whatsapp.png" alt="">
+        </a>
+    </div>
+     
+    <footer>
+        <div class="logofooter">
+            <img src="Imagenes/Logo/logo.png" alt="">
+        </div>
+     <div class="contacto">
+        <div class="ayuda">
+            <h2>¿Necesitas Ayuda?</h2>
+            <a href="http://Wa.me/573156733729"><strong>Iniciar Chat</strong></a>
+            <p style="font-size: small;">De lunes a viernes de 09:00am a 08:00pm</p>
+            
+            <p>Llamar al (315) 000-0000</p>
+            <p style="font-size: small; margin: 0;">De lunes a viernes de 09:00am a 07:00pm</p>
+        </div>
+        <div class="ubicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.762108858876!2d-74.19264392526165!3d4.636477545338305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ddc311353eb%3A0xa76e1013999880bb!2sPorvenir%20Reservado%2011!5e0!3m2!1ses!2sco!4v1724630165682!5m2!1ses!2sco" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="redesfooter">
+            <h2>Siguenos en Nuestras Redes</h2>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i>X</a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i>TikTok</a>
+        </div>
+        <div class="infromacion">
+            <h2>Contactanos</h2>
+            <p><strong>Teléfono:</strong> (315) 000-0000</p>
+            <p><strong>Correo:</strong> new@style.com</p>
+            <p><strong>Dirección:</strong> Calle 56F SUR N. 94A-20, Bogotá</p>
+        </div>
+    </div>
+        <h4>© 2024 New Style - Todos Los Derechos Reservados</h4>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');// Llama al botón del menú hamburguesa
+        const navMenu = document.querySelector('nav ul');// Selecciona lo que pertenece al menú de navegación
+    
+        menuToggle.addEventListener('click', () => { // Espera a que se haga clic en el botón del menú
+            navMenu.classList.toggle('show');// Show se utiliza como clase para mostrar o ocultar el menú
+        });
+        let lastScrollTop = 0; // Almacena la última posición de desplazamiento, determina si se esta desplazando o no la pantalla
+
+        window.addEventListener('scroll', () => { // Cada que el usuario se desplaza en la venta, se ejecutará la función
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;// 1. VARIABLE, 2. SI SE DESPLAZO HACIA ABAJO POSITIVO DE LO CONTRARIO 0, 3. EN CASO DE QUE 2. NO ESTE DISPONIBLE
+
+        
+        if (currentScroll > lastScrollTop) { //Si el usuario se está desplazando hacia abajo
+            navMenu.classList.remove('show'); // se oculta el menú
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar que el valor sea negativo si el usuario se desplaza hacia arriba o más allá de la parte superior
+        });
+    </script>
+</body>
+</html>

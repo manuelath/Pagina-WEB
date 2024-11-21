@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Hombre</title>
+    <script src="https://kit.fontawesome.com/9b5107ae0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+
+<body>
+    <header>
+        <div class="containerheader">
+            <div class="logo"> 
+                <img src="Imagenes/Logo/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <button class="menu-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <a href="index.html"><b>Inicio</b></a>
+                        <a href="index1.html"><b>Sobre Nosotros</b></a>
+                        <a href="index2.html"><b>Ropa Mujer</b></a>
+                        <a href="index3.html"><b>Ropa Hombre</b></a>
+                        <a href="index4.html"><b>Contacto</b></a>
+                        <a href="index5.html" class="entrar"><b>Entrar</b></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-items">
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Camisetas Hombre/CamisaFormalNegra.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Camisa Formal Negra</h2>
+                <p class="precio">$80.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    
+    
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Camisetas Hombre/CamisetaEstampada.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Camiseta Estampada</h2>
+                <p class="precio">$90.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    
+    
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Camisetas Hombre/CamisetaPoloRosada.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Camiseta Tipo Polo</h2>
+                <p class="precio">$70.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    
+    
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Chaquetas y Busos Hombre/ChaquetaCueroNegra.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Chaqueta de Cuero Negra</h2>
+                <p class="precio">$200.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    
+    
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Chaquetas y Busos Hombre/ChaquetaEstampadoMilitar.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Chaqueta con Estampado Militar</h2>
+                <p class="precio">$250.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <figure>
+                <img src="Imagenes/Ropa Hombre/Chaquetas y Busos Hombre/ChaquetaImpermeableAzul.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>Chaqueta Impermeable Azul</h2>
+                <p class="precio">$200.000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="iconoflotante">
+        <a href="http://Wa.me/573156733729" target="_blank">
+         <img class="botonicono" src="Icono/whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="logofooter">
+            <img src="Imagenes/Logo/logo.png" alt="">
+        </div>
+
+        <div class="redesfooter">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <h4>© 2024 New Style - Todos Los Derechos Reservados</h4>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');// Llama al botón del menú hamburguesa
+        const navMenu = document.querySelector('nav ul');// Selecciona lo que pertenece al menú de navegación
+    
+        menuToggle.addEventListener('click', () => { // Espera a que se haga clic en el botón del menú
+            navMenu.classList.toggle('show');// Show se utiliza como clase para mostrar o ocultar el menú
+        });
+        let lastScrollTop = 0; // Almacena la última posición de desplazamiento, determina si se esta desplazando o no la pantalla
+
+        window.addEventListener('scroll', () => { // Cada que el usuario se desplaza en la venta, se ejecutará la función
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;// 1. VARIABLE, 2. SI SE DESPLAZO HACIA ABAJO POSITIVO DE LO CONTRARIO 0, 3. EN CASO DE QUE 2. NO ESTE DISPONIBLE
+
+        
+        if (currentScroll > lastScrollTop) { //Si el usuario se está desplazando hacia abajo
+            navMenu.classList.remove('show'); // se oculta el menú
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar que el valor sea negativo si el usuario se desplaza hacia arriba o más allá de la parte superior
+        });
+    </script>
+</body>
+</html>
